@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>APP MainPage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <button onclick="submitForm1()" class="styled" id="button1">GO 1  APP</button>
+            <button onclick="submitForm2()" class="styled" id="button2">GO 2  APP</button>
+            <button onclick="submitForm3()" class="styled" id="button3">GO 3  APP</button>
+            <button onclick="submitForm4()" class="styled" id="button4">GO 4  APP</button>
+            <button id="demo1">Demo 1</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        document.getElementById("demo1").addEventListener("click", function () {
+            swal({
+                icon: "warning",
+                buttons:{
+                    A: {
+                        text: "Btn A",
+                        value: "Btn A"
+                    },
+                    B: {
+                        text: "Btn B",
+                        value: "Btn B"
+                    },
+                    C: {
+                        text: "Btn C",
+                        value: "Btn C"
+                    }
+                }
+            }).then((value) => {
+                swal(`You clicked ${value}`);
+            });
+        });
+           
+       
+        function submitForm1()
+        {   
+              var button1 = document.getElementById("button1");
+              button1.disabled = true;
+              button2.disabled = true;
+              button3.disabled = true;
+              button4.disabled = true;
+              button1.textContent = button1.textContent +"開啟中";
+        
+              let app1 = 'myapp://noah.liu/example?info=來自火星的Hello';
+              let appstore1 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
+         
+              setTimeout(function ()
+              {
+                  window.location.href = app1;
+                 
+                setTimeout(function ()
+                    {
+                    swal({
+                        title: "無安裝" + button1.textContent.replace("開啟中", ""),
+                        text: "\n按下 OK GO ! 後下載" + button1.textContent.replace("開啟中", ""),
+                        icon: "info",
+                        buttons: {A:{ text: " OK GO !", value: "BtnA" }},
+                   
+                        }).then((value) =>
+                           {
+                            window.location.href = appstore1;
+
+                               setTimeout(function ()
+                               {
+                                 window.close();
+                               }, 500);
+                           });
+                    }, 2000);
+              }, 500);
+
+              setTimeout(function()
+              {
+                  button1.disabled = false;
+                  button2.disabled = false;
+                  button3.disabled = false;
+                  button4.disabled = false;
+              },8000)
+           }
+
+        function submitForm2()
+        {
+            var button2 = document.getElementById("button2");
+            button1.disabled = true;
+            button2.disabled = true;
+            button3.disabled = true;
+            button4.disabled = true;
+            button2.textContent = button2.textContent + "開啟中";
+           
+            let app2 = 'myapp://noah.liu/example?info=來自火星的Hello';
+            let appstore2 = 'https://play.google.com/store/books/details/%E6%9F%A5%E7%90%86_%E8%92%99%E6%A0%BC_%E7%AA%AE%E6%9F%A5%E7%90%86%E7%9A%84%E6%99%AE%E9%80%9A%E5%B8%B8%E8%AD%98_%E5%A2%9E%E4%BF%AE%E7%89%88?id=7gaUDwAAQBAJ';
+            setTimeout(function () {
+                window.location.href = app2;
+
+                setTimeout(function ()
+                {
+                    swal({
+                        title: "無安裝" + button2.textContent.replace("開啟中", ""),
+                        text: "\n按下 OK GO ! 後下載" + button2.textContent.replace("開啟中", ""),
+                        icon: "info",
+                        buttons: { A: { text: " OK GO !", value: "BtnA" } },
+
+                    }).then((value) => {
+                        window.location.href = appstore2;
+
+                        setTimeout(function () {
+                            window.close();
+                        }, 500);
+                    });          
+                }, 2000);
+            }, 500);
+
+            setTimeout(function () {
+                button1.disabled = false;
+                button2.disabled = false;
+                button3.disabled = false;
+                button4.disabled = false;
+            }, 8000)
+        }
+
+        function submitForm3()
+        {
+            var button3 = document.getElementById("button3");
+            button1.disabled = true;
+            button2.disabled = true;
+            button3.disabled = true;
+            button4.disabled = true;
+            button3.textContent = button3.textContent + "開啟中";
+          
+            let app3 = 'myapp://noah.liu/example?info=來自火星的Hello';
+            let appstore3 = 'https://play.google.com/store/apps/details?id=jp.naver.line.android';
+
+            setTimeout(function () {
+                window.location.href = app3;
+
+                setTimeout(function ()
+                {
+                    swal({
+                        title: "無安裝" + button3.textContent.replace("開啟中", ""),
+                        text: "\n按下 OK GO ! 後下載" + button3.textContent.replace("開啟中", ""),
+                        icon: "info",
+                        buttons: { A: { text: " OK GO !", value: "BtnA" } },
+
+                    }).then((value) => {
+                        window.location.href = appstore3;
+
+                        setTimeout(function () {
+                            window.close();
+                        }, 500);
+                    });
+                   
+                
+                  
+                }, 2000);
+            }, 500);
+
+            setTimeout(function () {
+                button1.disabled = false;
+                button2.disabled = false;
+                button3.disabled = false;
+                button4.disabled = false;
+            }, 8000)
+        }
+
+        function submitForm4()
+        {
+            var button4 = document.getElementById("button4");
+            button1.disabled = true;
+            button2.disabled = true;
+            button3.disabled = true;
+            button4.disabled = true;
+            button4.textContent = button4.textContent + "開啟中";
+            
+            let app4 = 'myapp://noah.liu/example?info=來自火星的Hello';
+            let appstore4 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings4intune';
+
+            setTimeout(function () {
+                window.location.href = app4;
+
+                setTimeout(function ()
+                {
+                    swal({
+                        title: "無安裝" + button4.textContent.replace("開啟中", ""),
+                        text: "\n按下 OK GO ! 後下載" + button4.textContent.replace("開啟中", ""),
+                        icon: "info",
+                        buttons: { A: { text: " OK GO !", value: "BtnA" } },
+
+                    }).then((value) => {
+                        window.location.href = appstore4;
+
+                        setTimeout(function () {
+                            window.close();
+                        }, 500);
+                    });
+                }, 2000);
+            }, 500);
+
+            setTimeout(function () {
+                button1.disabled = false;
+                button2.disabled = false;
+                button3.disabled = false;
+                button4.disabled = false;
+            }, 8000)
+        }
+
+
+
+
+        //function open_app()
+        //{
+        //    window.open("SubPage.html");
+        //}
+    </script>
+                 
+
+</body>
+
+</html>
+
+<style>
+    .styled {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 180px;
+        height: 100px;
+        
+        background: rgba(3, 61, 198, 0.50);
+        color: #fff;
+        font-size: 30px;
+        border-radius: 50px;
+        border: none;
+        text-decoration: none;
+    }
+
+    .container {
+        height: 900px;
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
