@@ -42,6 +42,7 @@
         function submitForm1()
         {   
               var button1 = document.getElementById("button1");
+              var redirected = false;
               button1.disabled = true;
               button2.disabled = true;
               button3.disabled = true;
@@ -59,13 +60,15 @@
               setTimeout(function ()
               {
                   window.location.href = app1;
-                 
+                  window.closed;
                 setTimeout(function ()
                 {
-                    if (!document.webkitHidden && !redirected) {
-                        redirected = true;
-                        window.location = download_link;
-                    }
+                    //if (!document.webkitHidden && !redirected) {
+                    //    //redirected = true;
+                    //   // window.location = appstore2;
+                    //    window.alert("123456");
+                          
+                    //}
 
 
                     swal({
