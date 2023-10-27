@@ -7,9 +7,9 @@
 <body>
     <div class="container">
         <div class="center">
-            <button onclick="submitForm1()" class="styled" id="button1">GO 1  APP</button>
-            <button onclick="submitForm2()" class="styled" id="button2">GO 2  APP</button>
-            <button onclick="submitForm3()" class="styled" id="button3">GO 3  APP</button>
+            <button onclick="submitForm1()" class="styled" id="button1">台北捷運Go</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="submitForm2()" class="styled" id="button2">GO 2  APP</button><br /><br /><br />
+            <button onclick="submitForm3()" class="styled" id="button3">GO 3  APP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="submitForm4()" class="styled" id="button4">GO 4  APP</button>
             <button id="demo1">Demo 1</button>
         </div>
@@ -60,9 +60,9 @@
                     {
                     swal({
                         title: "無安裝" + button1.textContent.replace("開啟中", ""),
-                        text: "\n按下 OK GO ! 後下載" + button1.textContent.replace("開啟中", ""),
+                        text: "\n按下Download後下載"+ button1.textContent.replace("開啟中", ""),
                         icon: "info",
-                        buttons: {A:{ text: " OK GO !", value: "BtnA" }},
+                        buttons: { A: { text: "Download", value: "BtnA" } },
                    
                         }).then((value) =>
                            {
@@ -103,9 +103,9 @@
                 {
                     swal({
                         title: "無安裝" + button2.textContent.replace("開啟中", ""),
-                        text: "\n按下 OK GO ! 後下載" + button2.textContent.replace("開啟中", ""),
+                        text: "\n按下Download後下載" + button2.textContent.replace("開啟中", ""),
                         icon: "info",
-                        buttons: { A: { text: " OK GO !", value: "BtnA" } },
+                        buttons: { A: { text: "Download", value: "BtnA" } },
 
                     }).then((value) => {
                         window.location.href = appstore2;
@@ -144,9 +144,9 @@
                 {
                     swal({
                         title: "無安裝" + button3.textContent.replace("開啟中", ""),
-                        text: "\n按下 OK GO ! 後下載" + button3.textContent.replace("開啟中", ""),
+                        text: "\n按下Download後下載" + button3.textContent.replace("開啟中", ""),
                         icon: "info",
-                        buttons: { A: { text: " OK GO !", value: "BtnA" } },
+                        buttons: { A: { text: "Download", value: "BtnA" } },
 
                     }).then((value) => {
                         window.location.href = appstore3;
@@ -188,9 +188,9 @@
                 {
                     swal({
                         title: "無安裝" + button4.textContent.replace("開啟中", ""),
-                        text: "\n按下 OK GO ! 後下載" + button4.textContent.replace("開啟中", ""),
+                        text: "\n按下Download後下載" + button4.textContent.replace("開啟中", ""),
                         icon: "info",
-                        buttons: { A: { text: " OK GO !", value: "BtnA" } },
+                        buttons: { A: { text: "Download", value: "BtnA" } },
 
                     }).then((value) => {
                         window.location.href = appstore4;
