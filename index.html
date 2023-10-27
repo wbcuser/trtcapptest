@@ -49,7 +49,7 @@
               button1.textContent = button1.textContent +"開啟中";
              // var scheme_link = $(this).data("app-scheme");
             //var download_link = $(this).data("download-url");
-              let app1 = 'metrotaipeiapp://ws.metro.taipei/qrcodelog?info=來自火星的Hello';
+              let app1 = 'metrotaipeiapp://ws.metro.taipei/qrcodelog';
               let appstore1 = 'https://play.google.com/store/apps/details?id=com.noahliu.noisemeter';
 
            // let app1 = 'myapp://noah.liu/example?info=台北捷運Go';
@@ -61,7 +61,13 @@
                   window.location.href = app1;
                  
                 setTimeout(function ()
-                    {
+                {
+                    if (!document.webkitHidden && !redirected) {
+                        redirected = true;
+                        window.location = download_link;
+                    }
+
+
                     swal({
                         title: "無安裝" + button1.textContent.replace("開啟中", ""),
                         text: "\n按下Download後下載"+ button1.textContent.replace("開啟中", ""),
