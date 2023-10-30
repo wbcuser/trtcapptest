@@ -60,7 +60,7 @@
                   //window.close();
                 setTimeout(function ()
                 {
-                    if (!document.webkitHidden && !redirected) {
+                    if (document.webkitHidden && !redirected) {
                         redirected = true;
                         window.close();
                          // window.location = appstore2;
