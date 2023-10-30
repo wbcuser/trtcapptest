@@ -54,23 +54,19 @@
               //let app1 = 'metrotaipeiapp://ws.metro.taipei/qrcodelog';
               setTimeout(function ()
               {
-                  if (!document.webkitHidden && !redirected) {
-                      redirected = true;
-                      //  window.location = appstore2;
-                       //window.alert("123456");
-
-                  }
+           
                   window.location.href = app1;
                   //return;
                   //window.close();
                 setTimeout(function ()
                 {
-                    //if (!document.webkitHidden && !redirected) {
-                    //    //redirected = true;
-                    //   // window.location = appstore2;
+                    if (document.webkitHidden && !redirected) {
+                        redirected = true;
+                        window.close();
+                          window.location = appstore2;
                     //    window.alert("123456");
                           
-                    //}
+                    }
 
 
                     swal({
