@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <div class="center">
-            <button onclick="submitForm1()" class="styled" id="button1">台北捷運Go</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="open_app()" class="styled" id="button1">台北捷運Go</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="submitForm2()" class="styled" id="button2">GO 2  APP</button><br /><br /><br />
             <button onclick="submitForm3()" class="styled" id="button3">GO 3  APP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="submitForm4()" class="styled" id="button4">GO 4  APP</button>
@@ -15,7 +15,16 @@
         </div>
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
+    <script >
+
+
+    function open_app(){
+        window.open("SubPage.html");
+    }
+    </script>
+
+
+    <!--<script>
         document.getElementById("demo1").addEventListener("click", function () {
             swal({
                 icon: "warning",
@@ -229,7 +238,7 @@
         //{
         //    window.open("SubPage.html");
         //}
-    </script>
+    </script>-->
                  
 
 </body>
