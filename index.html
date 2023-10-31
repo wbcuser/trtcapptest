@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <div class="center">
-            <button onclick="open_app()" class="styled" id="button1">台北捷運Go</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="submitForm1()" class="styled" id="button1">台北捷運Go</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="submitForm2()" class="styled" id="button2">GO 2  APP</button><br /><br /><br />
             <button onclick="submitForm3()" class="styled" id="button3">GO 3  APP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button onclick="submitForm4()" class="styled" id="button4">GO 4  APP</button>
@@ -16,15 +16,15 @@
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script >
+   
 
-
-    function open_app(){
-        window.open("index.html");
+    function submitForm1(){
+        window.open("subpage.html");
     }
-    </script>
+   
 
 
-    <!--<script>
+   
         document.getElementById("demo1").addEventListener("click", function () {
             swal({
                 icon: "warning",
@@ -48,63 +48,63 @@
         });
            
        
-        function submitForm1()
-        {   
-              var button1 = document.getElementById("button1");
-              var redirected = false;
-              button1.disabled = true;
-              button2.disabled = true;
-              button3.disabled = true;
-              button4.disabled = true;
-              button1.textContent = button1.textContent +"開啟中";
+        //function submitForm1()
+        //{   
+        //      var button1 = document.getElementById("button1");
+        //      var redirected = false;
+        //      button1.disabled = true;
+        //      button2.disabled = true;
+        //      button3.disabled = true;
+        //      button4.disabled = true;
+        //      button1.textContent = button1.textContent +"開啟中";
            
-              let app1 = 'metrotaipeiapp://ws.metro.taipei/';
-              let appstore1 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
-              //let app1 = 'metrotaipeiapp://ws.metro.taipei/qrcodelog';
-              setTimeout(function ()
-              {
+        //      let app1 = 'metrotaipeiapp://ws.metro.taipei/';
+        //      let appstore1 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
+        //      //let app1 = 'metrotaipeiapp://ws.metro.taipei/qrcodelog';
+        //      setTimeout(function ()
+        //      {
            
-                  window.location.href = app1;
-                  //return;
-                  //window.close();
-                setTimeout(function ()
-                {
-                    if (document.webkitHidden && !redirected) {
-                        redirected = true;
-                        window.close();
-                         // window.location = appstore2;
-                    //    window.alert("123456");
+        //          window.location.href = app1;
+        //          //return;
+        //          //window.close();
+        //        setTimeout(function ()
+        //        {
+        //            if (document.webkitHidden && !redirected) {
+        //                redirected = true;
+        //                window.close();
+        //                 // window.location = appstore2;
+        //            //    window.alert("123456");
                           
-                    }
+        //            }
 
 
-                    swal({
-                        title: "無安裝" + button1.textContent.replace("開啟中", ""),
-                        text: "\n按下Download後下載"+ button1.textContent.replace("開啟中", ""),
-                        icon: "info",
-                        buttons: { A: { text: "Download", value: "BtnA" } },
+        //            swal({
+        //                title: "無安裝" + button1.textContent.replace("開啟中", ""),
+        //                text: "\n按下Download後下載"+ button1.textContent.replace("開啟中", ""),
+        //                icon: "info",
+        //                buttons: { A: { text: "Download", value: "BtnA" } },
                    
-                        }).then((value) =>
-                           {
-                            window.location.href = appstore1;
+        //                }).then((value) =>
+        //                   {
+        //                    window.location.href = appstore1;
 
-                               setTimeout(function ()
-                               {
-                                 window.close();
-                               }, 500);
-                           });
-                    }, 2000);
-              }, 500);
+        //                       setTimeout(function ()
+        //                       {
+        //                         window.close();
+        //                       }, 500);
+        //                   });
+        //            }, 2000);
+        //      }, 500);
 
-              setTimeout(function()
-              {
-                  button1.disabled = false;
-                  button2.disabled = false;
-                  button3.disabled = false;
-                  button4.disabled = false;
-                  window.close();
-              },8000)
-           }
+        //      setTimeout(function()
+        //      {
+        //          button1.disabled = false;
+        //          button2.disabled = false;
+        //          button3.disabled = false;
+        //          button4.disabled = false;
+        //          window.close();
+        //      },8000)
+        //   }
 
         function submitForm2()
         {
@@ -231,14 +231,7 @@
             }, 8000)
         }
 
-
-
-
-        //function open_app()
-        //{
-        //    window.open("SubPage.html");
-        //}
-    </script>-->
+    </script>
                  
 
 </body>
