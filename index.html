@@ -114,90 +114,90 @@
 
   
 
-        function submitForm3()
-        {
-            var button3 = document.getElementById("button3");
-            button1.disabled = true;
-            button2.disabled = true;
-            button3.disabled = true;
-            button4.disabled = true;
-            button3.textContent = button3.textContent + "開啟中";
+        //function submitForm3()
+        //{
+        //    var button3 = document.getElementById("button3");
+        //    button1.disabled = true;
+        //    button2.disabled = true;
+        //    button3.disabled = true;
+        //    button4.disabled = true;
+        //    button3.textContent = button3.textContent + "開啟中";
           
-            let app3 = 'myapp://noah.liu/example?info=來自火星的Hello';
-            let appstore3 = 'https://play.google.com/store/apps/details?id=jp.naver.line.android';
+        //    let app3 = 'myapp://noah.liu/example?info=來自火星的Hello';
+        //    let appstore3 = 'https://play.google.com/store/apps/details?id=jp.naver.line.android';
 
-            setTimeout(function () {
-                window.location.href = app3;
+        //    setTimeout(function () {
+        //        window.location.href = app3;
 
-                setTimeout(function ()
-                {
-                    swal({
-                        title: "無安裝" + button3.textContent.replace("開啟中", ""),
-                        text: "\n按下Download後下載" + button3.textContent.replace("開啟中", ""),
-                        icon: "info",
-                        buttons: { A: { text: "Download", value: "BtnA" } },
+        //        setTimeout(function ()
+        //        {
+        //            swal({
+        //                title: "無安裝" + button3.textContent.replace("開啟中", ""),
+        //                text: "\n按下Download後下載" + button3.textContent.replace("開啟中", ""),
+        //                icon: "info",
+        //                buttons: { A: { text: "Download", value: "BtnA" } },
 
-                    }).then((value) => {
-                        window.location.href = appstore3;
+        //            }).then((value) => {
+        //                window.location.href = appstore3;
 
-                        setTimeout(function () {
-                            window.close();
-                        }, 500);
-                    });
+        //                setTimeout(function () {
+        //                    window.close();
+        //                }, 500);
+        //            });
                    
                 
                   
-                }, 2000);
-            }, 500);
+        //        }, 2000);
+        //    }, 500);
 
-            setTimeout(function () {
-                button1.disabled = false;
-                button2.disabled = false;
-                button3.disabled = false;
-                button4.disabled = false;
-            }, 8000)
-        }
+        //    setTimeout(function () {
+        //        button1.disabled = false;
+        //        button2.disabled = false;
+        //        button3.disabled = false;
+        //        button4.disabled = false;
+        //    }, 8000)
+        //}
 
-        function submitForm4()
-        {
-            var button4 = document.getElementById("button4");
-            button1.disabled = true;
-            button2.disabled = true;
-            button3.disabled = true;
-            button4.disabled = true;
-            button4.textContent = button4.textContent + "開啟中";
+        ////function submitForm4()
+        ////{
+        ////    var button4 = document.getElementById("button4");
+        ////    button1.disabled = true;
+        ////    button2.disabled = true;
+        ////    button3.disabled = true;
+        ////    button4.disabled = true;
+        ////    button4.textContent = button4.textContent + "開啟中";
             
-            let app4 = 'myapp://noah.liu/example?info=來自火星的Hello';
-            let appstore4 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings4intune';
+        ////    let app4 = 'myapp://noah.liu/example?info=來自火星的Hello';
+        ////    let appstore4 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings4intune';
 
-            setTimeout(function () {
-                window.location.href = app4;
+        ////    setTimeout(function () {
+        ////        window.location.href = app4;
 
-                setTimeout(function ()
-                {
-                    swal({
-                        title: "無安裝" + button4.textContent.replace("開啟中", ""),
-                        text: "\n按下Download後下載" + button4.textContent.replace("開啟中", ""),
-                        icon: "info",
-                        buttons: { A: { text: "Download", value: "BtnA" } },
+        ////        setTimeout(function ()
+        ////        {
+        ////            swal({
+        ////                title: "無安裝" + button4.textContent.replace("開啟中", ""),
+        ////                text: "\n按下Download後下載" + button4.textContent.replace("開啟中", ""),
+        ////                icon: "info",
+        ////                buttons: { A: { text: "Download", value: "BtnA" } },
 
-                    }).then((value) => {
-                        window.location.href = appstore4;
+        ////            }).then((value) => {
+        ////                window.location.href = appstore4;
 
-                        setTimeout(function () {
-                            window.close();
-                        }, 500);
-                    });
-                }, 2000);
-            }, 500);
+        ////                setTimeout(function () {
+        ////                    window.close();
+        ////                }, 500);
+        ////            });
+        ////        }, 2000);
+        ////    }, 500);
 
-            setTimeout(function () {
-                button1.disabled = false;
-                button2.disabled = false;
-                button3.disabled = false;
-                button4.disabled = false;
-            }, 8000)
-        }
+        ////    setTimeout(function () {
+        ////        button1.disabled = false;
+        ////        button2.disabled = false;
+        ////        button3.disabled = false;
+        ////        button4.disabled = false;
+        ////    }, 8000)
+        ////}
 
     </script>
                  
