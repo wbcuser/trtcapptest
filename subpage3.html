@@ -13,23 +13,23 @@
 
 <script>
 
-    let app = 'zoomus:// /saml/mobile_.*';
+    let app3 = 'zoomus://saml/mobile_.*';
     //zoomphonecall
-    let appstore = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
+    let appstore3 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
     
   function open()
   {
       setTimeout(function ()
       {
-        window.location.href = app;
+        window.location.href = app3;
         setTimeout(function ()
         {
-            window.location.href = appstore;
+            window.location.href = appstore3;
             setTimeout(function ()
             {
                 window.close();
             },500);
         },3500);
-    }, 500);
+    }, 1000);
   }
 </script>

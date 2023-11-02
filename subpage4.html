@@ -13,22 +13,22 @@
 
 <script>
 
-  let app = 'metrotaipeiapp://ws123.metro.taipei123/';
-  let appstore = 'https://play.google.com/store/apps/details?id=jp.naver.line.android';
+  let app4 = 'metrotaipeiapp://ws123.metro.taipei123/';
+  let appstore4 = 'https://play.google.com/store/apps/details?id=jp.naver.line.android';
 
   function open()
   {
       setTimeout(function ()
       {
-        window.location.href = app;
+        window.location.href = app4;
         setTimeout(function ()
         {
-            window.location.href = appstore;
+            window.location.href = appstore4;
             setTimeout(function ()
             {
                 window.close();
             },500);
         },3500);
-    }, 500);
+    }, 1000);
   }
 </script>
