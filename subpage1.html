@@ -34,16 +34,16 @@
               }, 3500);
           }, 1000);
       }
-      //else if (navigator.userAgent.match(/(iPhone|iPad|iPod)/i))
-      //{
-      //    setTimeout(function ()
-      //    {
-      //        if (!document.webkitHidden)
-      //        {
-      //            window.location.href = appstore1;
-      //        }
-      //    }, 25);
-      //    window.location.href = app1;
-      //}
+      else if (navigator.userAgent.match(/(iPhone|iPad|iPod)/i))
+      {
+          setTimeout(function ()
+          {
+              //if (!document.webkitHidden)
+             // {
+                  window.location.href = appstore1;
+             // }
+          }, 25);
+          window.location.href = app1;
+      }
   }
 </script>
