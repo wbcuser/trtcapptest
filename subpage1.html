@@ -13,9 +13,10 @@
 
 <script>
       
-    let app1 = 'metrotaipeiapp://ws.metro.taipei/qrcodelog */';
+    let app1 = 'metrotaipeiapp://ws.metro.taipei/';
  // let app1 = 'metrotaipeiapp://ws.metro.taipei';
-  let appstore1 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
+    let appstore1 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
+    let appstore2 = 'https://apps.apple.com/tw/app/%E5%8F%B0%E5%8C%97%E6%8D%B7%E9%81%8Bgo/id997212021?platform=iphone';
   
   function open()
   {
@@ -40,7 +41,7 @@
           {
               if (!document.webkitHidden)
               {
-                  window.location.href = appstore1;
+                  window.location.href = appstore2;
               }
           }, 25);
           window.location.href = app1;
