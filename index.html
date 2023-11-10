@@ -8,16 +8,13 @@
     <div class="container">
         <div class="center">
             <button onclick="submitForm1()" class="styled" id="button1">台北捷運</button>
-            <button onclick="submitForm2()" class="styled" id="button2">123</button>
-            <button onclick="submitForm3()" class="styled" id="button3">ZOOM</button>
-            <button onclick="submitForm4()" class="styled" id="button4">LINE</button>
-            <button onclick="submitForm5()" class="styled" id="button5">123</button>
-            <button onclick="submitForm6()" class="styled" id="button6">123</button>
-            <button onclick="submitForm7()" class="styled" id="button7">123</button>
-            <button onclick="submitForm8()" class="styled" id="button8">123</button>
-       
-
-           
+            <button onclick="submitForm2()" class="styled" id="button2">差勤系統</button>
+            <button onclick="submitForm3()" class="styled" id="button3">緊急聯絡簿</button>
+            <button onclick="submitForm4()" class="styled" id="button4">重要資訊</button>
+            <button onclick="submitForm5()" class="styled" id="button5">123456</button>
+            <button onclick="submitForm6()" class="styled" id="button6">123456</button>
+            <button onclick="submitForm7()" class="styled" id="button7">ZOOM</button>
+            <button onclick="submitForm8()" class="styled" id="button8">LINE</button>
             <!--<button id="demo1">Demo 1</button>-->
         </div>
     </div>
@@ -38,6 +35,24 @@
     function submitForm4() {
         window.open("subpage4.html");
     }
+    function submitForm5() {
+        window.open("subpage5.html");
+    }
+    function submitForm6() {
+        window.open("subpage6.html");
+    }
+
+    function submitForm7() {
+        window.open("subpage7.html");
+    }
+    function submitForm8() {
+        window.open("subpage8.html");
+    }
+
+
+
+
+
         document.getElementById("demo1").addEventListener("click", function () {
             swal({
                 icon: "warning",
@@ -80,33 +95,24 @@
         margin: 18px 18px;
         border: 10px solid rgba(3, 61, 198, 0.10);
        
-        
-       
-        
-       
-    
-        
         background: rgba(3, 61, 198, 0.50);
         color: #fff;
-        font-size: 36px;
+        font-size: 32px;
         border-radius: 75px;
         
-       
         text-decoration: none;
-
-     
-        
     }
 
     .container {
         height: 1200px;
+        width: 1200px;
         position: relative;
     }
 
     .center {
         margin: 0;
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
