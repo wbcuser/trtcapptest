@@ -12,24 +12,38 @@
 </html>
 
 <script>
-    let app3 = '   https://zoom.com/j/7014782088/';
-  //let app3 = '   https://zoom.com/w/7014782088';
-  //let app3 = '   https://zoom.us/j/7014782088';
-    let appstore3 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
-    
+
+    let app3 = '';
+    let appstoreAndroid3 = 'https://mobileapp.metro.taipei/update/Phonebook_Android_140_RC2.apk';
+    let appstoreIOS3 = 'https://mobileapp.metro.taipei/iOSIPA/trtcPhoneBook/trtcphonebook.html';
+
   function open()
   {
-      setTimeout(function ()
+      if (navigator.userAgent.match(/Android/i))
       {
-        window.location.href = app3;
-        setTimeout(function ()
-        {
-            window.location.href = appstore3;
-            setTimeout(function ()
-            {
-                window.close();
-            },1500);
-        },3500);
-    }, 1000);
+          setTimeout(function ()
+          {
+              window.location.href = app1;
+              setTimeout(function ()
+              {
+                  window.location.href = appstoreAndroid3;
+                  setTimeout(function ()
+                  {
+                      window.close();
+                  }, 1500);
+              }, 3500);
+          }, 1000);
+      }
+      else if (navigator.userAgent.match(/(iPhone|iPad|iPod)/i))
+      {
+          setTimeout(function ()
+          {
+              if (!document.webkitHidden)
+              {
+                  window.location.href = appstoreIOS3;
+              }
+          }, 25);
+          window.location.href = app3;
+      }
   }
 </script>

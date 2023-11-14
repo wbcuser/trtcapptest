@@ -13,8 +13,8 @@
 
 <script>
     let app7 = '   https://zoom.com/j/7014782088/'; 
-    let appstore7 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
-    let appstore71 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
+    let appstoreAndroid7 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
+    let appstoreIOS7 = 'https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=zh-TW';
 
   function open()
   {
@@ -25,7 +25,7 @@
               window.location.href = app7;
               setTimeout(function ()
               {
-                  window.location.href = appstore7;
+                  window.location.href = appstoreAndroid7;
                   setTimeout(function ()
                   {
                       window.close();
@@ -39,10 +39,10 @@
           {
               if (!document.webkitHidden)
               {
-                  window.location.href = appstore71;
+                  window.location.href = appstoreIOS7;
               }
           }, 25);
-          window.location.href = app1;
+          window.location.href = app7;
       }
   }
 </script>
