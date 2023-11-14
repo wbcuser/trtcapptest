@@ -7,13 +7,24 @@
 </head>
 <body>
 
+    <a href="your-app-url" id="app-link">Open App</a>
+
+ 
+
 </body>
 </html>
 <script>
-// 取得當前的 URL
-var currentURL = window.location.href;
-console.log(currentURL);
+    function openAppOrDownload() {
+        // 在這裡使用 navigator.userAgent 檢查應用程式是否已安裝
+        // 這只是一個簡單的示例，實際上需要更多代碼來確認應用程式是否已安裝
+        var isAppInstalled = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-// 導向到新的頁面
-window.location.href = "https://www.metro.taipei/";
+        if (isAppInstalled) {
+            // 使用者有應用程式，導向到應用程式
+            window.location.href = "metrotaipeiapp://ws.metro.taipei";
+        } else {
+            // 應用程式未安裝，導向到下載頁面
+            window.location.href = "http://mobileapp.metro.taipei/update/TRTCInfo_132_RC2.apk";
+        }
+    }
 </script>
