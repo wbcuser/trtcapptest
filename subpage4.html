@@ -16,8 +16,8 @@
     let app4 = 'myapp://noah.liu/example?info=來自火星的Hello';
 
     let appstoreAndroid4 = 'http://mobileapp.metro.taipei/update/TRTCInfo_132_RC2.apk';
-   // let appstoreIOS4 = 'https://mobileapp.metro.taipei/iOSIPA/trtcManageAPP/trtcmanageapp.html';
-    let appstoreIOS4 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
+    let appstoreIOS4 = 'https://mobileapp.metro.taipei/iOSIPA/trtcManageAPP/trtcmanageapp.html';
+    //let appstoreIOS4 = 'https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05';
   function open()
   {
       if (navigator.userAgent.match(/Android/i))
@@ -27,7 +27,7 @@
               window.location.href = app4;
               setTimeout(function ()
               {
-                  window.location.href = appstoreIOS4;
+                  window.location.href = appstoreAndroid4;
                   setTimeout(function ()
                   {
                       window.close();
